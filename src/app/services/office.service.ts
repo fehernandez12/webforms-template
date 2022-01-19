@@ -9,7 +9,7 @@ import { OfficesResponseDto } from '../entities/response-dto/offices-response-dt
   providedIn: 'root'
 })
 export class OfficeService {
-  private endPoint: string = '';
+  private endPoint: string = 'http://localhost:82/api/Offices/GetOffices';
 
   // Encabezados de petición HTTP, no confundir con el HeaderDto.
   private header = new HttpHeaders(

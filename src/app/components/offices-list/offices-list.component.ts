@@ -17,8 +17,8 @@ export class OfficesListComponent implements OnInit {
     this.offices = [];
     this.request = {
       header: {
-        user: '',
-        token: ''
+        user: 'ED',
+        token: 'E8/DugPTC1yRn9OSmgKCGQ=='
       }
     }
   }
