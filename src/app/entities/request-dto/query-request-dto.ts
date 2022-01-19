@@ -3,9 +3,9 @@ import { FilterParametersDto } from "../objects-dto/filter-parameters-dto";
 import { BaseRequestDto } from "./base-request-dto";
 
 export interface QueryRequestDto extends BaseRequestDto {
-  filterParameters: FilterParametersDto;
-  filter?: string;
-  top?: string;
-  orderColumn?: string;
-  orderType?: string;
+  FilterParameters: FilterParametersDto;
+  Filter?: string;
+  Top?: string;
+  OrderColumn?: string;
+  OrderType?: string;
 }

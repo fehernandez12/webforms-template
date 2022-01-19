@@ -1,9 +1,9 @@
 export interface WorkflowTaskDto {
-  step: number;
-  description: string;
-  state: string;
-  priority: string;
-  ownerUser: string;
-  creationDate: Date;
-  expirationDate: Date;
+  Step: number;
+  Description: string;
+  State: string;
+  Priority: string;
+  OwnerUser: string;
+  CreationDate: Date;
+  ExpirationDate: Date;
 }

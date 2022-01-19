@@ -1,11 +1,11 @@
 export interface FileDto {
-  base64String: string;
-  ext: string;
-  description: string;
-  documentTypeCode: string;
-  directoryCode: string;
-  guid?: string;
-  version?: string;
-  length?: number;
-  mainFileId: number;
+  Base64String: string;
+  Ext: string;
+  Description: string;
+  DocumentTypeCode: string;
+  DirectoryCode: string;
+  GUID?: string;
+  Version?: string;
+  Length?: number;
+  MainFileId: number;
 }

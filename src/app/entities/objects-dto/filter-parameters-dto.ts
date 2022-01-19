@@ -1,5 +1,5 @@
 export interface FilterParametersDto {
-  field: string;
-  operator: string;
-  value: string;
+  Field: string;
+  Operator: string;
+  Value: string;
 }

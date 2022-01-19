@@ -16,9 +16,9 @@ export class OfficesListComponent implements OnInit {
   constructor(private officeService: OfficeService) {
     this.offices = [];
     this.request = {
-      header: {
-        user: 'ED',
-        token: 'E8/DugPTC1yRn9OSmgKCGQ=='
+      Header: {
+        User: 'ED',
+        Token: 'E8/DugPTC1yRn9OSmgKCGQ=='
       }
     }
   }
@@ -26,7 +26,7 @@ export class OfficesListComponent implements OnInit {
   ngOnInit(): void {
     this.officeService.getOffices(this.request).subscribe(
       offices => {
-        this.offices = offices.officeList
+        this.offices = offices.OfficeList
       }
     );
   }

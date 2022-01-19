@@ -1,4 +1,4 @@
 export interface DictionaryDto {
-  field: string;
-  valud: string;
+  Field: string;
+  Value: string;
 }

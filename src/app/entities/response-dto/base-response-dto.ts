@@ -1,4 +1,4 @@
 export interface BaseResponseDto {
-  success: boolean;
-  message: string;
+  Success: boolean;
+  Message: string;
 }

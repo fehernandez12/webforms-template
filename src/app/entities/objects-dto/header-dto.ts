@@ -1,4 +1,4 @@
 export interface HeaderDto {
-  user: string;
-  token: string;
+  User: string;
+  Token: string;
 }
