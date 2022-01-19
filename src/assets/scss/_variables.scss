@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+// Colores
+$dark-blue: #034167f0;
+$light-blue: #008fbe;
+$yellow: #ffb71a;
+
+$primary: $dark-blue;
+$secondary: $light-blue;
+
+// Otros atributos generales
+$border-width: 2px;
+
+/* Contraste:
+Este atributo cambia la manera en la que los colores se superponen */
+$min-contrast-ratio: 1.4;
+
+// Body
+$font-family-base: 'Open Sans';
+
+// Botones
+$btn-border-radius: .2rem;

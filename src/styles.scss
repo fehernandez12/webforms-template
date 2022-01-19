@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+/*
+
+Hoja principal de estilos de los formularios web de WorkManager.
+
+Esta hoja consiste exclusivamente de varios imports, y a la misma no debe añadirse código personalizado.
+El código personalizado, de ser necesario, iría en los archivos correspondientes.
+
+*/
+@import './assets/scss/variables';
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+@import './assets/scss/custom';

@@ -1,0 +1,43 @@
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Lista de oficinas</h5>
+    <hr>
+    <table class="table table-sm">
+      <thead>
+        <tr>
+          <th>ID de Oficina</th>
+          <th>Código de Oficina</th>
+          <th>Nombre</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngIf="offices.length === 0">
+          <td colspan="4">
+            <h4 class="font-weight-normal text-center text-danger">
+              No hay oficinas registradas.
+            </h4>
+          </td>
+        </tr>
+        <tr *ngFor="let office of offices">
+          <td>
+            {{ office.officeId }}
+          </td>
+          <td>
+            {{ office.code }}
+          </td>
+          <td>
+            {{ office.name }}
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <h4 class="font-weight-normal text-center text-info">
+              Total de oficinas: {{ offices.length }}
+            </h4>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
