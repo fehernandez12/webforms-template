@@ -3,6 +3,7 @@ import { OfficeService } from 'src/app/services/office.service';
 import { OfficesRequestDto } from 'src/app/entities/request-dto/offices-request-dto';
 import { OfficesResponseDto } from 'src/app/entities/response-dto/offices-response-dto';
 import { OfficeDto } from 'src/app/entities/objects-dto/office-dto';
+import { AlertHelper } from 'src/app/utilities/alert-helper';
 
 @Component({
   selector: 'app-offices-list',
@@ -25,8 +26,12 @@ export class OfficesListComponent implements OnInit {
 
   ngOnInit(): void {
     this.officeService.getOffices(this.request).subscribe(
-      offices => {
-        this.offices = offices.OfficeList
+      officesResult => {
+        if (!officesResult.Success) {
+          AlertHelper.errorAlert(officesResult.Message);
+        } else {
+          this.offices = officesResult.OfficeList
+        }
       }
     );
   }
